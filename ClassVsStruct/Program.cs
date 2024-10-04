@@ -35,13 +35,11 @@ namespace PerformanceComparison
         }
     }
 
-    // Benchmark class for comparison
     [MemoryDiagnoser]
     public class ModelPerformanceComparison
     {
-        private const int _iterations = 1000000;
+        private const int _iterations = 5000;
 
-        // Benchmark for class model
         [Benchmark]
         public void ClassModelTest()
         {
@@ -51,7 +49,6 @@ namespace PerformanceComparison
             }
         }
 
-        // Benchmark for struct model
         [Benchmark]
         public void StructModelTest()
         {
